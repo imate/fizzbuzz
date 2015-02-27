@@ -10,6 +10,9 @@ public class FizzBuzzer {
         if (number % 5 == 0) {
             message += "buzz";
         }
+        if (message.isEmpty()) {
+            message += number;
+        }
         return message;
     }
 
