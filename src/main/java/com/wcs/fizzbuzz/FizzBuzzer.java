@@ -14,6 +14,10 @@ public class FizzBuzzer {
             message += "wizz";
         }
 
+        if (String.valueOf(number).contains("3")) {
+            message += "fizz";
+        }
+
         if (message.isEmpty()) {
             message += number;
         }

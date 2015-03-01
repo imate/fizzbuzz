@@ -9,8 +9,8 @@ public class FizzBuzzerTest {
 
     @Test
     public void executeShouldReturnFizzIfTheNumberIsDividableBy3() {
-        assertEquals("fizz", fizzBuzzer.execute(3));
         assertEquals("fizz", fizzBuzzer.execute(6));
+        assertEquals("fizz", fizzBuzzer.execute(9));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class FizzBuzzerTest {
     @Test
     public void executeShouldReturnFizzBuzzIfTheNumberIsDividableBy15() {
         assertEquals("fizzbuzz", fizzBuzzer.execute(15));
-        assertEquals("fizzbuzz", fizzBuzzer.execute(30));
+        assertEquals("fizzbuzz", fizzBuzzer.execute(45));
     }
 
     @Test
@@ -39,14 +39,20 @@ public class FizzBuzzerTest {
 
     @Test
     public void executeShouldReturnBuzzWizzIfTheNumberIsDividableBy35() {
-        assertEquals("buzzwizz", fizzBuzzer.execute(35));
         assertEquals("buzzwizz", fizzBuzzer.execute(70));
+        assertEquals("buzzwizz", fizzBuzzer.execute(140));
     }
 
     @Test
     public void executeShouldReturnFizzBuzzWizzIfTheNumberIsDividableBy105() {
         assertEquals("fizzbuzzwizz", fizzBuzzer.execute(105));
         assertEquals("fizzbuzzwizz", fizzBuzzer.execute(210));
+    }
+    
+    @Test
+    public void executeShouldReturnFizzIfTheNumberIsContains3() {
+        assertEquals("fizz", fizzBuzzer.execute(13));
+        assertEquals("fizz", fizzBuzzer.execute(131));
     }
 
     @Test
