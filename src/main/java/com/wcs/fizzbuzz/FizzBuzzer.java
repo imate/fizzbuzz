@@ -13,7 +13,7 @@ public class FizzBuzzer {
         if (number % 7 == 0) {
             message += "wizz";
         }
-        
+
         if (message.isEmpty()) {
             message += number;
         }
