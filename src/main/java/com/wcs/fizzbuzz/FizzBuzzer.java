@@ -18,6 +18,14 @@ public class FizzBuzzer {
             message += "fizz";
         }
 
+        if (String.valueOf(number).contains("5")) {
+            message += "buzz";
+        }
+
+        if (String.valueOf(number).contains("7")) {
+            message += "wizz";
+        }
+
         if (message.isEmpty()) {
             message += number;
         }
